@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { RiJavascriptLine } from "react-icons/ri";
 import { FaNodeJs, FaReact, FaPython, FaCss3Alt, FaUnity } from "react-icons/fa";
