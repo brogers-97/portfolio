@@ -39,7 +39,7 @@ export default function ProjectFour(){
             <div className="project-header">
                 <h1>SimuStock</h1>
                 <p><a href="https://github.com/brogers-97/project-4-client" target="_blank" rel="noopener noreferrer">Source Code</a></p>
-                <p><Tooltip text="currently not deployed :("><a>View Page</a></Tooltip></p>
+                <p><Tooltip text="currently not deployed :(">View Page</Tooltip></p>
             </div>
             <div className="project-info">
                 <div className='gallery-container'>
