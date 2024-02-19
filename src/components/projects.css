@@ -1,0 +1,218 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(335deg, rgba(0,95,244,1) 0%, rgba(50,0,129,1) 100%);
+    background-size: cover;
+}
+.project-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+    color: white;
+}
+.project-header h1 {
+    margin-top: 10px;
+    margin-left: 19px;
+    margin-bottom: 0px;
+    font-size: 72px;
+    padding: 0px;
+}
+.project-header p {
+    margin-top: 65px;
+    margin-bottom: 0px;
+    margin-right: 65px;
+    padding: 5px 15px;
+    color: white;
+    border: 1px white solid;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.25);
+}
+.project-header p a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit parent color (white) */
+}
+.project-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+.gallery-container {
+    height: 80%;
+    margin: auto;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.4);
+}
+
+.tech-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 400px;
+    margin: auto;
+}
+.tech-div h2 {
+  text-decoration: underline;
+}
+.tech-used {
+    color: white;
+    margin: auto;
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.tech-used p {
+    font-size: 30px;
+    margin: 15px;
+    padding: 10px;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+.tech-used p:hover {
+  color: rgb(128, 0, 128);
+  text-shadow: 0 0 8px rgba(128, 0, 128), /* Purple glow */
+                 0 0 10px rgba(128, 0, 128), /* More intense purple glow */
+                 0 0 12px rgba(128, 0, 128); /* Even more intense purple glow */
+}
+.project-summary {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.tech-used::-webkit-scrollbar {
+    width: 10px;
+}
+
+.tech-used::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.tech-used::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+.tech-used::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.tech-used::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* Example of media query for iPhone screens */
+@media only screen and (max-width: 375px) {
+    .intro {
+      width: 90%; /* Adjust width for smaller screens */
+      margin-top: 100px; /* Adjust margin top */
+    }
+    
+    .skills,
+    .projects,
+    .about,
+    .contact {
+      margin-top: 180px; 
+    }
+    
+    .intro-name h1 {
+      font-size: 40px; 
+    }
+    
+    .intro-name p {
+      font-size: 20px; 
+    }
+    
+    .links p {
+      font-size: 16px; 
+    }
+    
+    .project-header h1 {
+      font-size: 42px; 
+    }
+    
+    .project-header p {
+      font-size: 16px; 
+    }
+    
+    .tech-used {
+      height: auto; 
+      width: 90%; 
+    }
+  }
+  
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.project-header h1 {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+.project-header p {
+  transform: translateX(-100%);
+  opacity: 0;
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.project-header p:first-child {
+  animation-delay: .5s; 
+}
+
+.project-header p:last-child {
+  animation-delay: .5s; 
+}
+
+
+.project-summary {
+  font-size: 27px;
+  padding: 35px;
+  margin: auto;
+  color: white;
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: visibility 0.2s, opacity 0.2s ease-in-out;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
