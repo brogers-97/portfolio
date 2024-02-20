@@ -60,7 +60,7 @@
     border: 2px solid #ddd;
     border-radius: 5px;
     text-align: center;
-    font-size: 3rem; 
+    font-size: 1.78rem; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: rgba(255, 255, 255, 0.8);
     margin-top: 10px;
@@ -105,19 +105,24 @@
   }
   
 .resume {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  
 }
 .resume-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Adds space between elements */
 }
 .resume-button h2 {
-    margin: 0;
+  margin: 0;
+  font-size: 24px;
+  color: #333; /* Darker text for better readability */
 }
 .arrow {
     height: 60px;
@@ -125,24 +130,16 @@
     margin: 15px;
 }
 .button {
-    background: linear-gradient(to right,rgb(0, 26, 63), rgb(2, 78, 122));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 5px;
-    color: white;
-    font-size: 48px;
-    text-shadow: 0 0 5px rgba(255, 20, 147, 0.8), /* Pink glow */
-                 0 0 10px rgba(255, 20, 147, 0.6), /* Outer pink glow */
-                 0 0 20px rgba(255, 20, 147, 0.4), /* Further outer pink glow */
-                 0 0 40px rgba(255, 20, 147, 0.2); /* Farthest outer pink glow */
-    transition: text-shadow 0.3s ease; /* Smooth transition for the glow effect */
+  background-color: #8c00ff; /* Bootstrap primary blue */
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+  text-shadow: none; /* Remove the glow effect for a cleaner look */
 }
 .button:hover {
-    text-shadow: 0 0 10px rgba(128, 0, 128, 0.9), /* Enhanced purple glow */
-                 0 0 20px rgba(128, 0, 128, 0.7), /* Outer enhanced purple glow */
-                 0 0 30px rgba(128, 0, 128, 0.5), /* Further outer enhanced purple glow */
-                 0 0 40px rgba(128, 0, 128, 0.3), /* Farthest outer enhanced purple glow */
-                 0 0 50px rgba(128, 0, 128, 0.2); /* Extreme outer enhanced purple glow */
+  background-color: #6200ff; /* Darker shade of blue on hover */
 }

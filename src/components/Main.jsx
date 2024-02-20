@@ -30,7 +30,7 @@ export default function Main() {
         <div className='intro'>
           <div className='intro-name'>
             <h1>Brian Rogers</h1>
-            <p>FullStack Developer</p>
+            <p>Full-Stack Developer</p>
           </div>
           <div className='links'>
             <p onClick={() => scrollToSection('skills')}>Skills</p>
@@ -86,7 +86,7 @@ export default function Main() {
               <div class="project-background" id="project1-background"></div>
             </Link>
             <Link to="/project2" className='project'>
-              <h1>Equestion Organizer</h1>
+              <h1>Equestrian Organizer</h1>
               <p>A Horse Managment System for equestrians to help keep track with their tasks and animals.</p>
               <div class="project-background1" id="project2-background"></div>
             </Link>
